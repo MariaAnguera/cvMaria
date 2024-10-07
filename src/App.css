@@ -1,0 +1,594 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Resetear estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #242424;  /* Fondo negro grisáceo */
+  color: #ffffff;  /* Texto en blanco */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+section {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado y Navegación */
+/* Encabezado y Navegación */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1f1f1f;  /* Color de fondo del header */
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #c4c4c4;  /* Texto del header */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;  /* Efecto hover naranja */
+}
+
+
+/* Sección Home */
+#home {
+  
+  background-size: cover; /* Ajusta para que la imagen se vea completa */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Pantalla completa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.home-container {
+  display: flex;
+  justify-content: flex-start; /* Alinear el contenido hacia la izquierda */
+  align-items: center;
+  width: 100%;
+}
+
+.home-content {
+  max-width: 600px; /* Establece un ancho máximo para el contenido */
+  padding-left: 50px; /* Añadir espacio a la izquierda del contenido */
+}
+
+#home h1 {
+  font-size: 24px;
+  color: #c4c4c4; /* Texto gris claro */
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#home h2 {
+  font-size: 48px;
+  color: #ffffff; /* Texto blanco */
+  font-weight: 700; /* Texto audaz */
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 18px;
+  color: #f39c12; /* Texto naranja */
+  margin-bottom: 40px;
+}
+
+.btn-know-more {
+  background-color: #f39c12; /* Naranja */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-know-more:hover {
+  background-color: #e67e22; /* Naranja más oscuro al hacer hover */
+}
+
+
+/* Sección About */
+
+.about-section {
+  background-color: #1f1f1f;  /* Fondo gris oscuro */
+  min-height: 100vh;  /* Ocupa el 100% de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  /* Añadir un pequeño relleno */
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 250px;  /* Reducir el tamaño de la imagen */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-content {
+  color: #c4c4c4;
+  font-size: 14px;  /* Reducir tamaño de texto */
+}
+
+.about-content h2 {
+  font-size: 24px;  /* Reducir tamaño del título */
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;  /* Reducir espacio entre los párrafos */
+  text-align: left;
+}
+
+/* Habilidades */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Mantener las 6 cajetillas en 3 columnas */
+  gap: 10px;  /* Reducir espacio entre tarjetas */
+  margin-top: 15px;  /* Reducir margen superior */
+}
+
+.skill {
+  background-color: #333333;
+  padding: 10px;  /* Reducir tamaño de las tarjetas */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill h3 {
+  margin-bottom: 5px;
+  font-size: 14px;  /* Reducir tamaño del texto */
+  color: #ffffff;
+}
+
+.skill .rating {
+  font-size: 14px;  /* Reducir tamaño de las estrellas */
+  color: #f39c12;  /* Naranja para las estrellas */
+}
+
+/* Botón de descarga */
+a.btn-download {
+  background-color: #f39c12; /* Fondo naranja */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px; /* Ajusta el tamaño del padding para el estilo del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al estilo de botón */
+  font-size: 16px; /* Tamaño de fuente */
+  text-decoration: none; /* Quita el subrayado de enlace */
+  display: inline-block; /* Permite que el padding y el background se apliquen */
+  text-align: center; /* Centra el texto */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+  margin-top: 20px;
+
+}
+
+a.btn-download:hover {
+  background-color: #e67e22; /* Color de fondo al hacer hover */
+}
+/* Sección Services */
+#services {
+  background-color: #242424; /* Fondo negro grisáceo */
+  min-height: 100vh; /* Ocupar el 100% de la pantalla visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente el contenido */
+  align-items: center; /* Centrar horizontalmente el contenido */
+  padding: 80px 0; /* Añadir espacio superior e inferior */
+}
+
+#services h2 {
+  color: #ffffff;
+  margin-bottom: 20px; /* Ajustar el margen inferior del título */
+  font-size: 36px;
+  text-align: center;
+}
+
+#services p {
+  color: #c4c4c4; /* Texto gris claro */
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 50px; /* Espacio entre el párrafo y la cuadrícula */
+  text-align: center;
+  max-width: 800px; /* Limitar el ancho del párrafo */
+  margin-left: auto; /* Centrar el párrafo */
+  margin-right: auto; /* Centrar el párrafo */
+}
+
+/* Contenedor principal de servicios */
+.services-container {
+  width: 90%; /* Ancho del contenedor */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrando el contenedor */
+  padding: 20px; /* Espacio interno */
+}
+
+/* Estilos para la cuadrícula de proyectos */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales en pantallas grandes */
+  gap: 30px; /* Espacio entre los proyectos */
+  margin-top: 40px; /* Margen superior */
+}
+
+/* Estructura de las tarjetas */
+.project-card {
+  perspective: 1000px; 
+  display: block
+}
+
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .project-card-inner {
+  transform: rotateY(180deg); /* Hace que se voltee en el eje Y */
+}
+
+/* Estilos de la cara frontal y trasera de la tarjeta */
+.project-card-front,
+.project-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-front {
+  background-color: #333333; /* Fondo oscuro para la cara frontal */
+}
+
+.project-card-back {
+  background-color: #eb9409; /* Fondo para la cara trasera */
+  color: #ffffff;
+  transform: rotateY(180deg); /* Voltea el reverso para que aparezca al girar */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.project-card-back p {
+  margin-top: 25px; /* Añadir margen superior al texto en la parte trasera */
+  font-size: 14px;
+}
+
+/* Ajuste de los iconos */
+.project-icon {
+  width: 50px; /* Ajustar el tamaño del icono */
+  height: auto; /* Mantener las proporciones del icono */
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+/* Efecto hover para escalar ligeramente el tamaño de la tarjeta */
+.project-card:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+}
+.project:link, .project:visited, .project:hover, .project:active {
+  text-decoration: none; /* Eliminar el subrayado */
+  color: inherit; /* Mantener el color del texto original */
+}
+
+/* Sección Contacto */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#contact {
+  background-color: #1f1f1f;
+  min-height: 100vh; /* Ocupar toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 20px; /* Espacio interno para los laterales */
+}
+
+#contact h2 {
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los campos del formulario */
+  max-width: 600px; /* Ancho máximo del formulario */
+  width: 100%; /* Asegurarse de que el formulario ocupe el 100% del espacio disponible */
+  margin: 0 auto; /* Centrando el formulario */
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%; /* El input y el textarea ocupan todo el ancho disponible */
+}
+
+#contact textarea {
+  min-height: 150px; /* Altura mínima del textarea */
+}
+
+#contact button {
+  background-color: #f39c12;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+#contact button:hover {
+  background-color: #e67e22;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+  /* --- Pantallas pequeñas y menú hamburguesa --- */
+  @media (max-width: 768px) {
+    /* Menú hamburguesa */
+    header nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #1f1f1f;
+      padding: 20px;
+    }
+  
+    header nav ul.active {
+      display: flex;
+    }
+  
+    header nav ul li {
+      margin-bottom: 20px;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+    }
+  
+    /* Sección Home */
+    #home h1 {
+      font-size: 20px;
+    }
+    
+    #home h2 {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+  
+    #home p {
+      font-size: 14px;
+    }
+  
+    .btn-know-more {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    /* Sección About */
+    .about-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .about-content h2 {
+      font-size: 20px;
+    }
+  
+    .about-image img {
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  
+    /* Skills y Projects */
+    #services {
+      padding: 40px 20px; /* Reduce el padding en dispositivos móviles */
+    }
+    #services h2 {
+      font-size: 24px;
+      margin-bottom: 10px; /* Aumentar espacio inferior del título */
+    }
+  
+    #services p {
+      font-size: 14px;
+      margin-bottom: 20px; /* Aumentar espacio entre el texto y el botón */
+      max-width: 90%; /* Limitar el ancho del texto */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; /* Centrar el texto */
+    }
+  
+    .btn-download {
+      font-size: 14px;
+      padding: 10px 16px;
+      margin-bottom: 20px; /* Espacio entre el botón y las tarjetas de proyecto */
+    }
+  
+    /* Ajuste de la cuadrícula para las tarjetas de proyecto */
+    .services-grid {
+      gap: 15px; /* Aumentar espacio entre las tarjetas */
+      grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    }
+  
+    /* Tarjetas de proyecto */
+  
+    .project-card-front p,
+    .project-card-back p {
+      font-size: 14px;
+      margin-top: 10px; /* Añadir espacio superior para separar el texto de los bordes */
+    }
+  
+    .skills-grid, .services-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .skill, .project-card {
+      padding: 10px;
+    }
+  
+    .skill h3, .project-card-front p, .project-card-back p {
+      font-size: 14px;
+    }
+  
+    /* Contacto */
+    #contact h2 {
+      font-size: 24px;
+    }
+  
+    #contact form {
+      gap: 10px;
+    }
+  
+    #contact input, #contact textarea, #contact button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+
+/* --- Pantallas medianas --- */
+@media (max-width: 1024px) and (min-width: 481px) {
+  header nav ul li {
+    margin: 0 15px;
+  }
+
+  #home h1 {
+    font-size: 22px;
+  }
+  
+  #home h2 {
+    font-size: 40px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  .btn-know-more {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+  .about-section {
+    padding: 60px 20px; /* Ajusta el padding para evitar solapamiento */
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .skills-grid, .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #contact {
+    padding: 60px 20px; /* Ajusta el padding para evitar solapamiento */
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact form {
+    gap: 15px;
+  }
+
+  #contact button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
