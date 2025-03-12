@@ -39,7 +39,9 @@ const About = () => {
                         </div>
                     </div>
 
-                    <a href="https://github.com/MariaAnguera/cv-pdf/raw/45b2dd21eb0c3b153b39d88db28143643a543af5/Cv-MariaAnguera.pdf" download="Cv-MariaAnguera.pdf" className="btn-download">Descargar CV</a>
+                    <a href="https://raw.githubusercontent.com/MariaAnguera/CV/main/CV%20Maria%20Anguera.pdf" download="CV Maria Anguera.pdf" class="btn-download">
+                        Descargar CV
+                    </a>
                 </div>
             </div>
         </section>
